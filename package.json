@@ -1,0 +1,30 @@
+{
+  "name": "project_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gizmo83/project_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gizmo83/project_2/issues"
+  },
+  "homepage": "https://github.com/Gizmo83/project_2#readme",
+  "dependencies": {
+    "amazon-affiliate-api": "0.0.5",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "init": "^0.1.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "rand-token": "^0.4.0",
+    "sequelize": "^4.37.4"
+  }
+}

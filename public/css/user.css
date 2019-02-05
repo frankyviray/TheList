@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.sidenav-trigger {
+    background: none;
+    border: none;
+}
+
+.material-icons {
+    color: white;
+}
+
+.font {
+font-family: 'Oleo Script', cursive;
+font-size: 150%;
+}
+#title-header, #desc-header, #added-header, #title-result {
+    font-weight: bold;
+}
+p {
+    margin: 0;
+}
+
+#added-header {
+    margin-top: 15px;
+}
+
+#added-title {
+    margin-bottom: 15px;
+}
+
+.added-desc {
+    padding-left: 0px !important;
+}
+
+#textarea2 {
+    width: 90%;
+    max-width: auto;
+    float: left;
+}
+
+#delete-btn{
+    float: right;
+    margin-left:5px;
+}
+
+.finish-btn {
+    width: 90%;
+    text-align: center;
+}
+
+
+

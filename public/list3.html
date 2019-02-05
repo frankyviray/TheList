@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/list3.css">
+    <title>The List</title>
+</head>
+
+<body>
+    <!-- Top Nav Bar -->
+    <nav class="cyan darken-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="/user" class="brand-logo">
+                <span class="font list-name">Kobe's List</span>
+            </a>
+            <!-- <ul class="right">
+                <li>
+                    <a id="navEdit" class="" href="">Edit</a>
+                </li>
+            </ul> -->
+        </div>
+    </nav>
+    
+    
+    <div id="main-content">
+        
+        <!-- <div id="myP">This is a paragraph. Click the button to make me editable.</p>
+            
+            <button onclick="myFunction()">Edit</button> -->
+            <!--             
+                <p id="demo"></p>
+            -->
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div id="myP" class="col l12">
+                        <br>
+                        <button onclick="myFunction()" input type="image" id="myimage" style="height:30px;width:50px;"><i class="material-icons">create</i></button>
+                        <br>
+                        <h3 id="list-name"></h3>
+                        <p id="list-description"></p>
+                    </div>
+                    
+                </div>
+                <div id ="myK" class="row">
+                    <br>
+                    <button onclick="myFunction()" input type="image" id="myimage" style="height:30px;width:50px;"><i class="material-icons">create</i></button>
+                    <br>
+                    <div class="col l5">
+                        
+                        <div class="image-container">
+                            
+                            <img class="image" id="image1">
+                            <div class="middle">
+                                <div class="text">
+                                    <a id="link1">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l5">
+                        <h6 id="name1"></h6>
+                        <p id="description1"></p>
+                    </div>
+                </div>
+                <div id ="myD"class="row">
+                    <br>
+                    <button onclick="myFunction()" input type="image" id="myimage" style="height:30px;width:50px;"><i class="material-icons">create</i></button>
+                    <br>
+                    <div class="col l5">
+                        <h6 id="name2"></h6>
+                        <p id="description2"></p>
+                    </div>
+                    <div class="col l5">
+                        <div class="image-container">
+                            <img id="image2" class="image">
+                            <div class="middle">
+                                <div class="text">
+                                    <a id="link2">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id ="myZ"class="row">
+                    <br>
+                    <button onclick="myFunction()" input type="image" id="myimage" style="height:30px;width:50px;"><i class="material-icons">create</i></button>
+                    <br>
+                    <div class="col l5">
+                        <div class="image-container">
+                            <img id="image3" class="image">
+                            <div class="middle">
+                                <div class="text">
+                                    <a id="link3">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l5">
+                        <h6 id="name3"></h6>
+                        <p id="description3"></p>
+                    </div>
+                </div>
+                <div id ="myD"class="row">
+                    <br>
+                    <button onclick="myFunction()" input type="image" id="myimage" style="height:30px;width:50px;"><i class="material-icons">create</i></button>
+                    <br>
+                    <div class="col l5">
+                        <h6 id="name4"></h6>
+                        <p id="description4"></p>
+                    </div>
+                    <div class="col l5">
+                        <div class="image-container">
+                            <img id="image4" class="image">
+                            <div class="middle">
+                                <div class="text">
+                                    <a id="link4">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id ="myZ"class="row">
+                    <br>
+                    <button onclick="myFunction()" input type="image" id="myimage" style="height:30px;width:50px;"><i class="material-icons">create</i></button>
+                    <br>
+                    <div class="col l5">
+                        <div class="image-container">
+                            <img id="image5" class="image">
+                            <div class="middle">
+                                <div class="text">
+                                    <a id="link5">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l5">
+                        <h6 id="name5"></h6>
+                        <p id="description5"></p>
+                    </div>
+                </div>
+                <div class="row summary">
+                    <h6>Summary</h6>
+                    <p id="name1"></p>
+                    <p id="name2"></p>
+                    <p id="name3"></p>
+                    <p id="name4"></p>
+                    <p id="name5"></p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Footer -->
+        <footer class="page-footer cyan darken-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col l9 s12">
+                        <h5 class="white-text font">About Us</h5>
+                        <p class="grey-text text-lighten-4">We are a team of UCLA Coding Bootcamp students working on this project like it's our full time job.</p>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text font">Connect</h5>
+                        <ul>
+                            <li>
+                                <a class="white-text" href="https://github.com/Gizmo83">Peter Hoang</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="https://github.com/davidkhahn">David K Hahn</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="https://github.com/AlexRhee">Alex Rhee</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="https://github.com/frankyviray">Franky Viray</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright cyan">
+                <div class="container">
+                    © 2018 Copyright
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Scripts Section -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        
+        
+        <script>
+            function myFunction() {
+                document.getElementById("myP").contentEditable = true;
+                document.getElementById("myK").contentEditable = true;
+                document.getElementById("myD").contentEditable = true;
+                document.getElementById("myZ").contentEditable = true;
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+        <script src="js/list.js"></script>
+    </body>
+    
+    </html>

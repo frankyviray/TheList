@@ -1,0 +1,13 @@
+#index-banner {
+    background-image: url("../images/banner.jpg");
+    background-size: 100% auto;
+}
+.card-title {
+    background-color: rgb(0, 188, 212, 0.6);
+    padding: 10px !important;
+    font-weight: 400 !important;
+}
+.font {
+    font-family: 'Oleo Script', cursive;
+    font-size: 150%;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>The List</title>
+</head>
+<body>
+    <!-- Top Nav Bar -->
+    <nav class="cyan darken-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">The <span class="font">List</span></a>
+          <ul class="right">
+            <li><a id="navLogin" class="modal-trigger" href="#login-modal">Login</a></li>
+            <li><a id="navSignup" class="modal-trigger" href="#signup-modal">Sign Up</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center">The <span class="font">List</span></h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Create personal blog-style shopping lists!</h5>
+            </div>
+            <div id="start-btn" class="row center">
+                <a href="#signup-modal" id="start-button" class="modal-trigger btn-large waves-effect waves-light cyan">Sign Up</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    
+    <!--   Card Section   -->
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/developer.jpg">
+                            <span class="card-title">Dave's <span class="font">List</span></span>
+                            <a class="modal-trigger btn-floating halfway-fab waves-effect waves-light cyan" href="#example-modal"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>My "on-the-go" web developer setup</p>
+                        </div>
+                    </div>
+                </div>   
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/minimalist.jpg">
+                            <span class="card-title">Bella's <span class="font">List</span></span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light cyan"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>My minimalist studio apartment</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/podcast.jpg">
+                            <span class="card-title">Eileen's <span class="font">List</span></span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light cyan"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Everything to begin podcasting like a pro!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="login-email" type="email" class="validate">
+                        <label for="login-email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="login-password" type="password" class="validate">
+                        <label for="login-password">Password</label>
+                    </div>
+                </div>
+            </form>    
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="login-btn" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <h4>Sign Up</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="signup-btn" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+        </div>
+    </div>
+
+    <!-- Screenshot Modal -->
+    <div id="example-modal" class="modal">
+        <div class="modal-content">
+            <img class="responsive-img" src="images/screenshot.png">
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="page-footer cyan darken-1">
+        <div class="container">
+          <div class="row">
+            <div class="col l9 s12">
+              <h5 class="white-text font">About Us</h5>
+              <p class="grey-text text-lighten-4">We are a team of UCLA Coding Bootcamp students working on this project like it's our full time job.</p>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text font">Connect</h5>
+              <ul>
+                <li><a class="white-text" href="https://github.com/Gizmo83">Peter Hoang</a></li>
+                <li><a class="white-text" href="https://github.com/davidkhahn">David K Hahn</a></li>
+                <li><a class="white-text" href="https://github.com/AlexRhee">Alex Rhee</a></li>
+                <li><a class="white-text" href="https://github.com/frankyviray">Franky Viray</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright cyan">
+            <div class="container">
+                © 2018 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

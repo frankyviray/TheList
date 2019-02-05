@@ -1,0 +1,85 @@
+h4 {
+    text-align: center;
+    font-weight: bold;
+}
+h6{
+    font-weight: bold;
+}
+.font {
+    font-family: 'Oleo Script', cursive;
+    font-size: 150%;
+}
+img {
+    width: 300px;
+}
+
+/* Image Hover */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:none;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+a {
+    color: white;
+
+}
+
+button  {
+    float: right;
+    background: none;
+    border: none;
+    color: rgb(28, 201, 201)
+}
+
+button:focus {
+    /* background-color: rgb(42, 183, 169); */
+    outline: none;
+}
+/* 
+/* button:hover {background-color: #20ebfa}
+
+button:active {
+  background-color: #1be4ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+End image hover */
+/* } */ 
+
+.summary {
+    text-align: center;
+}
+
